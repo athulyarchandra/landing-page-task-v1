@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Anek+Kannada:wght@100..800&family=Bree+Serif&family=Cookie&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Subrayada:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="main" >
+        <a class="utube-logo" href="#">
+            <i class="fa-solid fa-bars ms-4 text-light"></i>
+            <img width="140px" height="80px" title="Youtune Home" href="main" src="./images/image-removebg-preview (25).png" alt="">
+        </a>
+
+        <div class="d-flex text-center">
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <!-- menu icon -->
+                <i class='bx bx-menu' id="menu"></i>
+                <!-- close icon -->
+                <i id="cancel" class='bx bx-x'></i>
+            </label>
+            <div  class="input-group mb-3 d-flex align-items-center text-center">
+                <input id="search-icon" type="text"  placeholder=" Search" aria-label="Recipient's username" aria-describedby="basic-addon2" class="text-dark">
+                <a href="#" class="border-0" ><i class="fa-solid fa-magnifying-glass text-light"></i></a>
+                <a href="#" title="search with your voice"><i class="fa-solid fa-microphone text-light"></i></a>
+              </div>
+            <!-- <div id="search-icon"><input placeholder="Search" class="border-0"><a href="#" class="text-dark"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></div>
+            <a href="#" class="text-dark"><i class="fa-solid fa-microphone"></i></a> -->
+
+        </div>
+
+        <div class="d-flex flex-row mb-3 align-items-center" id="profile-icon">
+            <div class="p-2"><a href="#" title="Create" class="text-light fs-5"><i class="fa-solid fa-video"></i></a></div>
+            <div class="p-2"><a href="#" title="Notifications" class="text-light fs-5"><i class="fa-regular fa-bell"></i></a></div>
+            <div class="p-2"> <a href="#">
+                    <img width="30px" height="30px" class="rounded-circle fs-5" src="./images/hey...jpg" alt="">
+                    </i>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <div class="side-body">
+        <div id="sidebar">
+            <div id="sidebar-items">
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#" id="sidebar-item"> <i class="fa-solid fa-camera-retro"></i>Shorts</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-layer-group"></i>Subscription</a>
+                <hr>
+                <h6>You</h6>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+                <a href="#" id="sidebar-item"><i class="fa-brands fa-playstation"></i>Playlists</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-clock"></i>Watch Later</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-thumbs-up"></i>Liked videos</a>
+                <hr>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-fire"></i>Trending</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-basket-shopping"></i>Shopping</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-music"></i>Music</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-clapperboard"></i>Films</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-tower-broadcast"></i>Live</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-vr-cardboard"></i>Gaming</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-newspaper"></i>News</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-trophy"></i>Sport</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-lightbulb"></i>Courses</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-vest-patches"></i>Fashion & Beauty</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-podcast"></i>Podcasts</a>
+                <hr>
+                <h6>More for you</h6>
+                <a href="#" id="sidebar-item"><i class="fa-brands fa-youtube"></i>Youtube </a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-icons"></i>YouTube Music</a>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-kitchen-set"></i>Youtube Kids</a>
+                <hr>
+                <a href="#" id="sidebar-item"><i class="fa-solid fa-gear"></i>Settings</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-flag"></i>Report</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-circle-question"></i>Help</a>
+                <a href="#" id="sidebar-item"><i class="fa-regular fa-comment-dots"></i>Send feedback</a>
+                <hr>
+                <p><a href="#"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-opacity-100-hover ">About
+                        Press Copyright Contact us Creator sAdvertise Developers</a></p>
+                <p><a href="#"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-opacity-100-hover">Terms
+                        Privacy Policy & Safety How YouTube works Test new features</a></p>
+                <p class="text-secondary fs-6">&copy;2024 Google LLC</p>
+            </div>
+        </div>
+        <div id="content">
+            <div>
+                <div id="top-btns" class="d-flex">
+                    <div class="title-btn">
+                        <p>All</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Live</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>News</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Music</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Malayalam cinema</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Gaming</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Dramedy</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Macro-economics</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Web Development</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Recently uploaded</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Watched</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Web Development</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Macro-economics</p>
+                    </div>
+                    <div class="title-btn">Web Development</div>
+                    <div class="title-btn">
+                        <p>Macro-economics</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Web Development</p>
+                    </div>
+                    <div class="title-btn">
+                        <p>Recently uploaded</p>
+                    </div>
+                </div>
+            </div>
+            <div id="videos" class="">
+
+                <div class="vdo-div">
+                    <div class="iframe-div">
+                        <a href="https://www.youtube.com/watch?v=Eh993__rOxA&t=4s">
+                         <img width="100%" height="250" class="iframe-img" src="./images/image copy 4.png"
+                         title="Me Before You Official Trailer #1 (2016) - Emilia Clarke, Sam Claflin Movie HD" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></img>
+                        </a>
+                     </div>
+                    <div class="vdo-txt">
+                        <div class="d-flex ">
+                            <div class="ms-1">
+                                <a href="">
+                                    <img width="40" height="40" class="rounded-circle" src="./images/image copy 2.png"
+                                        alt="No image"></a>
+                            </div>
+                            <div class="ms-3 ">
+                                <a href="https://www.youtube.com/watch?v=1nh-bJpEq9g&t=35s" class=""><b>Me Before You
+                                        Official Trailer #1 (2016) - Emilia Clarke, Sam
+                                        Claflin Movie HD</b></a>
+                                <p><a href="#" id="name-channel" class=" text-secondary"> <br>Rotten Tomatoes
+                                        Trailers</a> <br><a href="" class="m-0 text-secondary">30M views
+                                        .8 years ago</a></p>
+                            </div>
+                            <div class="btn-group dropend" role="group">
+                                <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical text-light "></i>
+                                </button>
+                                <ul class="dropdown-menu bg-secondary">
+                                    <li><a class="dropdown-item" href="#">Add to quie</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-div">
+                    <div class="iframe-div">
+                       <a href="https://www.youtube.com/watch?v=-tnxzJ0SSOw&t=1s">
+                        <img width="100%" height="250" class="iframe-img" src="./images/image copy 7.png"
+                        title="THE AMAZING SPIDER-MAN 3D - Official Trailer" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></img>
+                       </a>
+                    </div>
+                    <div class="vdo-txt">
+                        <div class="d-flex ">
+                            <div class="ms-1">
+                                <a href="#">
+                                    <img width="40" height="40" class="rounded-circle" src="./images/image copy 2.png"
+                                        alt="No image"></a>
+                            </div>
+                            <div class="ms-3 ">
+                                <a href="#" class=""><b>THE AMAZING SPIDER-MAN 3D - Official Trailer</b></a>
+                                <p><a href="#" id="name-channel" class=" text-secondary"> <br>Sony Pictures</a> <br><a
+                                        href="" class="m-0 text-secondary">17M views 12 years ago</a></p>
+                            </div>
+                            <div>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical text-light me-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-div">
+                    <div class="iframe-div">
+                       <a href="https://www.youtube.com/watch?v=d9MyW72ELq0&t=2s">
+                        <img width="100%" height="250" class="iframe-img" src="./images/image.png"
+                        title="Avatar: The Way of Water | Official Trailer" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></img>
+                       </a>
+                    </div>
+                    <div class="vdo-txt">
+                        <div class="d-flex ">
+                            <div class="ms-1">
+                                <a href="#">
+                                    <img width="40" height="40" class="rounded-circle" src="./images/image copy 2.png"
+                                        alt="No image"></a>
+                            </div>
+                            <div class="ms-3 ">
+                                <a href="#" class=""><b>Avatar: The Way of Water | Official Trailer</b></a>
+                                <p><a href="#" id="name-channel" class=" text-secondary"> <br>Avatar</a> <br><a href=""
+                                        class="m-0 text-secondary">59M views 1year ago </a></p>
+                            </div>
+                            <div>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical text-light me-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="videos2" class="">
+                <div class="vdo-div">
+                    <div class="iframe-div">
+                        <a href="https://www.youtube.com/watch?v=k3g_WjLCsXM">
+                            <img width="100%" height="" class="iframe-img" src="./images/image copy.png"
+                            title="Sajni (Song): Arijit Singh, Ram Sampath | Laapataa Ladies | Aamir Khan Productionsr" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></img>
+                        </a>
+                        
+                    </div>
+                    <div class="vdo-txt">
+                        <div class="d-flex ">
+                            <div class="ms-1">
+                                <a href="#">
+                                    <img width="40" height="40" class="rounded-circle" src="./images/image copy.png"
+                                        alt="No image"></a>
+                            </div>
+                            <div class="ms-3 ">
+                                <a href="#" class=""><b>Sajni (Song): Arijit Singh, Ram Sampath | Laapataa Ladies | Aamir Khan Productions</b></a>
+                                <p><a href="#" id="name-channel" class=" text-secondary"> <br>T-Series Trailers</a> <br>
+                                    <a href="" class="m-0 text-secondary">30M views 5 months ago
+                                        .8 years ago</a>
+                                </p>
+                            </div>
+                            <div>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical text-light ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-div">
+                    <div class="iframe-div">
+                        <a href="https://www.youtube.com/watch?v=oMlRuRx9gHs">
+                            <img width="100%" height="250" class="iframe-img" src="./images/image copy 2.png"
+                            title="Tom and Jerry Tales | Christmas Dream | Boomerang UK" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></img>
+                        </a>
+                        
+                    </div>
+                    <div class="vdo-txt">
+                        <div class="d-flex ">
+                            <div class="ms-1">
+                                <a href="#">
+                                    <img width="40" height="40" class="rounded-circle" src="./images/image copy 2.png"
+                                        alt="No image"></a>
+                            </div>
+                            <div class="ms-3 ">
+                                <a href="#" class=""><b>Tom and Jerry Tales | Christmas Dream | Boomerang UK</b></a>
+                                <p><a href="#" id="name-channel" class=" text-secondary"> <br>MovieCon</a> <br><a
+                                        href="" class="m-0 text-secondary">7.3M views 6years ago</a></p>
+                            </div>
+                            <div>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical text-light me-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-div">
+                    <div class="iframe-div">
+                        <a href="https://www.youtube.com/watch?v=j0kro6SuwxM&t=2s">
+                            <img width="100%" height="250" class="iframe-img" src="./images/image copy 5.png"
+                            title="Love at First Sight | Official Trailer | Netflix" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></img>
+                        </a>
+                    </div>
+                    <div class="vdo-txt">
+                        <div class="d-flex ">
+                            <div class="ms-1">
+                                <a href="#">
+                                    <img width="40" height="40" class="rounded-circle" src="./images/image copy 2.png"
+                                        alt="No image"></a>
+                            </div>
+                            <div class="ms-3 ">
+                                <a href="#" class=""><b>Love at First Sight | Official Trailer | Netflix</b></a>
+                                <p><a href="#" id="name-channel" class=" text-secondary"> <br>Avatar</a> <br><a href=""
+                                        class="m-0 text-secondary">7.3M views 1 year ago </a></p>
+                            </div>
+                            <div>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical text-light me-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
+
